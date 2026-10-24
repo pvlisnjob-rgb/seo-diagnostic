@@ -81,6 +81,23 @@
   .proof .row { display: flex; gap: 26px; flex-wrap: wrap; margin: 6px 0 12px; }
   .proof small { color: var(--muted); display: block; }
 
+  /* кейсы */
+  p.sub { color: var(--muted); margin: -10px 0 24px; font-size: 0.95rem; }
+  .case { border: 1px solid var(--line); border-radius: 20px; padding: 24px; margin-bottom: 18px; background: #fff; box-shadow: 0 2px 14px rgba(15,23,42,0.04); }
+  .case-head { margin-bottom: 18px; }
+  .case-head h3 { font-size: 1.2rem; margin-top: 8px; }
+  .case-head .meta { color: var(--muted); margin: 4px 0 0; font-size: 0.93rem; }
+  .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-dark);
+         background: var(--accent-soft); padding: 4px 10px; border-radius: 999px; }
+  .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .m { background: var(--soft); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .m .v { font-size: 1.7rem; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; line-height: 1.1; }
+  .m .l { font-weight: 600; color: var(--ink); font-size: 0.93rem; margin-top: 6px; }
+  .m .s { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+  .shot { margin: 18px 0 0; }
+  .shot img { width: 100%; border-radius: 14px; border: 1px solid var(--line); display: block; }
+  .shot figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
+
   .not { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
   .not div { border: 1px dashed #cbd5e1; border-radius: 14px; padding: 18px; color: var(--muted); }
   .not div b { color: var(--ink); display: block; }
@@ -100,6 +117,9 @@
   @media (max-width: 760px) {
     section { padding: 48px 0; }
     .grid2, .grid3, .steps, .not, .about { grid-template-columns: 1fr; }
+    .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .m .v { font-size: 1.4rem; }
+    .case { padding: 18px; }
     .final { padding: 34px 20px; }
   }
 </style>
@@ -121,6 +141,44 @@
       <div class="facts"><span>Fixed price: $300</span><span>From 3 business days</span><span>No calls required</span></div>
     </div>
   </div>
+
+  <section id="results">
+    <h2>Results from recent projects</h2>
+    <p class="sub">Client names and domains are kept confidential. Numbers are from Google Search Console and SE Ranking rank tracking.</p>
+
+    <div class="case">
+      <div class="case-head">
+        <div><span class="tag">Project 1</span><h3>International e-commerce store · technical product</h3>
+          <p class="meta">11 European markets · Dec 2024 – Mar 2026</p></div>
+      </div>
+      <div class="metrics">
+        <div class="m"><div class="v">164K</div><div class="l">clicks from Google UK</div><div class="s">11.7M impressions · Search Console</div></div>
+        <div class="m"><div class="v">~20 → ~8</div><div class="l">average position, UK</div><div class="s">Search Console</div></div>
+        <div class="m"><div class="v">19% → 85%</div><div class="l">tracked keywords in top 10, Austria</div><div class="s">SE Ranking</div></div>
+        <div class="m"><div class="v">6% → 72%</div><div class="l">tracked keywords in top 10, Italy</div><div class="s">SE Ranking</div></div>
+        <div class="m"><div class="v">×7.4</div><div class="l">search visibility, Finland</div><div class="s">6.9 → 51 · SE Ranking</div></div>
+        <div class="m"><div class="v">×4.5</div><div class="l">search visibility, Sweden</div><div class="s">9.3 → 42 · SE Ranking</div></div>
+      </div>
+      <figure class="shot">
+        <a href="img/gsc-uk.jpg" target="_blank" rel="noopener"><img src="img/gsc-uk.jpg" alt="Google Search Console, UK: 164K clicks, 11.7M impressions, average position improving from about 20 to about 8" loading="lazy"></a>
+        <figcaption>Google Search Console, UK version of the store: average position over 16 months.</figcaption>
+      </figure>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div><span class="tag">Project 2</span><h3>E-commerce store · Southern Europe</h3>
+          <p class="meta">Spain, Italy, France · Apr 2024 – Mar 2026</p></div>
+      </div>
+      <div class="metrics">
+        <div class="m"><div class="v">~20 → 8</div><div class="l">average position, Spain</div><div class="s">SE Ranking</div></div>
+        <div class="m"><div class="v">90%</div><div class="l">tracked keywords in top 10, Spain</div><div class="s">SE Ranking</div></div>
+        <div class="m"><div class="v">×3.7</div><div class="l">search visibility, Spain</div><div class="s">~17 → 63.4 · SE Ranking</div></div>
+        <div class="m"><div class="v">×3.5</div><div class="l">search visibility, Italy</div><div class="s">~16 → 56.6 · SE Ranking</div></div>
+        <div class="m"><div class="v">×3</div><div class="l">search visibility, France</div><div class="s">~13 → 39.3 · first 11 months</div></div>
+      </div>
+    </div>
+  </section>
 
   <section>
     <h2>Who it's for</h2>
@@ -171,12 +229,9 @@
         <p>I work in writing on purpose: you get a document your team can act on, not a call you have to remember.</p>
       </div>
       <div class="proof">
-        <small>One example · e-commerce site, UK · Search Console data</small>
-        <div class="row">
-          <div><div class="num">~20 → ~8</div><small>average position in Google</small></div>
-          <div><div class="num">164K</div><small>clicks over 16 months</small></div>
-        </div>
-        <small>Client details are kept confidential.</small>
+        <small>What I see most often</small>
+        <p style="margin:8px 0 0">Sites rarely fail because of “not enough SEO”. Usually it's two or three specific problems — pages Google doesn't index, language versions competing with each other, categories nobody can find. The diagnostic finds those first.</p>
+        <p style="margin:10px 0 0"><a href="#results">See results from recent projects ↑</a></p>
       </div>
     </div>
   </section>
