@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10 причин, почему сайт не растёт в Google и Яндексе — что проверить первым | Павел Лисневский</title>
+<meta name="description" content="Бесплатный чек-лист SEO-консультанта: 10 частых причин, почему сайт не растёт в поиске, где увидеть каждую в Search Console и Яндекс Вебмастере и что исправлять первым.">
+<link rel="canonical" href="https://pvlisnjob-rgb.github.io/seo-diagnostic/ru/">
+<meta property="og:title" content="10 причин, почему сайт не растёт в Google и Яндексе">
+<meta property="og:description" content="Где увидеть каждую в Search Console и Вебмастере — и что исправлять первым.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>П</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #0f172a; --text: #334155; --muted: #64748b; --line: #e2e8f0; --soft: #f8fafc; --accent: #4f46e5; --accent-dark: #4338ca; --accent-soft: #eef2ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fff; font-size: 17px; line-height: 1.65; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+  h1, h2 { color: var(--ink); line-height: 1.25; margin: 0; }
+  a { color: var(--accent); }
+  .top { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 0.95rem; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 700; text-decoration: none; }
+  .brand span { width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 800; flex: none; }
+  .top a.th { color: var(--muted); text-decoration: none; }
+  .hero { padding: 36px 0 24px; }
+  .eyebrow { display: inline-block; background: var(--accent-soft); color: var(--accent-dark); font-weight: 600; font-size: 0.85rem; padding: 6px 12px; border-radius: 999px; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; letter-spacing: -0.03em; }
+  .hero p { font-size: 1.1rem; margin: 16px 0 0; }
+  .toc { background: var(--soft); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin: 22px 0 8px; columns: 2; column-gap: 28px; font-size: 0.95rem; }
+  .toc a { display: block; text-decoration: none; padding: 3px 0; break-inside: avoid; }
+  .item { border: 1px solid var(--line); border-radius: 18px; padding: 22px 24px; margin: 16px 0; scroll-margin-top: 16px; }
+  .item h2 { font-size: 1.18rem; display: flex; gap: 12px; align-items: baseline; }
+  .item h2 b { flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff; display: inline-grid; place-items: center; font-size: 0.95rem; }
+  .row { display: grid; grid-template-columns: 120px 1fr; gap: 6px 14px; margin-top: 12px; }
+  .row dt { font-weight: 700; color: var(--ink); font-size: 0.82rem; text-transform: uppercase; letter-spacing: .04em; padding-top: 3px; }
+  .row dd { margin: 0; }
+  code { background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 0.86em; }
+  .next { background: var(--ink); color: #cbd5e1; border-radius: 22px; padding: 32px 26px; margin: 34px 0 56px; }
+  .next h2 { color: #fff; margin-bottom: 10px; }
+  .btn { display: inline-flex; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; padding: 14px 24px; border-radius: 12px; margin-top: 14px; }
+  .btn:hover { background: var(--accent-dark); }
+  footer { color: var(--muted); font-size: 0.85rem; padding: 0 0 40px; text-align: center; }
+  @media (max-width: 640px) { .row { grid-template-columns: 1fr; } .item { padding: 18px; } .toc { columns: 1; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="https://www.threads.com/@pavel_lisneuski"><span>П</span> Павел Лисневский · SEO-консультант</a>
+    <a class="th" href="https://www.threads.com/@pavel_lisneuski" target="_blank" rel="noopener">@pavel_lisneuski</a>
+  </header>
+
+  <div class="hero">
+    <span class="eyebrow">Бесплатный чек-лист</span>
+    <h1>10 причин, почему сайт не растёт в Google и Яндексе</h1>
+    <p>Это то, что я нахожу чаще всего, когда «по SEO всё сделано», а трафика нет. Каждую причину можно проверить за несколько минут в Google Search Console и Яндекс Вебмастере — платные сервисы не нужны.</p>
+    <nav class="toc">
+      <a href="#r1">1. Важные страницы не в индексе</a>
+      <a href="#r2">2. Нет страницы под запрос</a>
+      <a href="#r3">3. Технический запрет для поиска</a>
+      <a href="#r4">4. Дубли от фильтров и сортировок</a>
+      <a href="#r5">5. Страницы застряли на 8–20 местах</a>
+      <a href="#r6">6. Страница не отвечает на запрос</a>
+      <a href="#r7">7. Сайт неудобен с телефона</a>
+      <a href="#r8">8. Нет доверия: цены, контакты, отзывы</a>
+      <a href="#r9">9. Не указан регион</a>
+      <a href="#r10">10. Санкции и ручные меры</a>
+    </nav>
+  </div>
+
+  <div class="item" id="r1">
+    <h2><b>1</b> Важные страницы не в индексе</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Страниц услуг, категорий или товаров нет в поиске — значит, им нечем ранжироваться.</dd>
+      <dt>Где смотреть</dt><dd>Google: Search Console → <code>Страницы</code> → «Просканировано, но пока не проиндексировано». Яндекс: Вебмастер → <code>Индексирование</code> → <code>Страницы в поиске</code> → исключённые («малоценная или маловостребованная», «дубль»).</dd>
+      <dt>Что делать</dt><dd>Сделать ключевые страницы заметно разными и полезными, поставить на них ссылки из меню и категорий, убрать почти одинаковые страницы. Кнопка «Запросить индексирование» решение поиска не меняет.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r2">
+    <h2><b>2</b> Нет страницы под то, что реально ищут</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>По всем запросам показывается главная, и нигде нет хороших позиций.</dd>
+      <dt>Где смотреть</dt><dd>Search Console → <code>Эффективность</code> → откройте запрос → вкладка <code>Страницы</code>. Вебмастер → <code>Эффективность</code> → <code>Запросы</code>. Если на запросы про конкретную услугу, товар или город отвечает главная — не хватает посадочных страниц.</dd>
+      <dt>Что делать</dt><dd>Отдельная страница под каждую услугу, категорию или город со своим заголовком, текстом и ссылками. Сначала структура, потом дизайн.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r3">
+    <h2><b>3</b> Технический запрет для поиска</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Трафик упал сразу после редизайна, переезда или запуска нового сайта.</dd>
+      <dt>Где смотреть</dt><dd>Search Console → <code>Проверка URL</code> для важной страницы: разрешено ли индексирование и какой канонический адрес выбрал Google. Вебмастер → <code>Инструменты</code> → <code>Проверка ответа сервера</code> и <code>Анализ robots.txt</code>. Частая причина — забытый <code>noindex</code> или закрытый раздел в <code>robots.txt</code>.</dd>
+      <dt>Что делать</dt><dd>Снять запрет, проверить, что канонический адрес ведёт на саму страницу, а основной текст виден в HTML, а не только после загрузки скриптов.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r4">
+    <h2><b>4</b> Дубли от фильтров, сортировок и меток</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>В индексе тысячи адресов с <code>?sort=</code>, <code>?color=</code>, <code>utm_</code>, страницы пагинации — а нужные страницы теряются среди них. Особенно у интернет-магазинов.</dd>
+      <dt>Где смотреть</dt><dd>Вебмастер → <code>Страницы в поиске</code> (фильтр по адресам с «?»), Search Console → <code>Страницы</code> → «Страница является копией».</dd>
+      <dt>Что делать</dt><dd>Решить, какие фильтры нужны поиску как отдельные страницы (например, «кроссовки Nike»), а остальные закрыть через canonical, <code>Clean-param</code> для Яндекса и правила в robots.txt.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r5">
+    <h2><b>5</b> Страницы застряли на 8–20 местах</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Показов много, кликов почти нет.</dd>
+      <dt>Где смотреть</dt><dd>Search Console → <code>Эффективность</code> → <code>Страницы</code>, включите «Средняя позиция» и отберите позиции 8–20. Поиск уже считает эти страницы релевантными, но не лучшими.</dd>
+      <dt>Что делать</dt><dd>Прежде чем переписывать текст — поставить на них ссылки с сильных страниц сайта и сделать заголовок точнее под запрос. Это самый дешёвый рост.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r6">
+    <h2><b>6</b> Страница не отвечает на запрос</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>По коммерческому запросу («купить», «цена», «заказать») у вас статья, а в выдаче — каталоги и карточки. Или наоборот.</dd>
+      <dt>Где смотреть</dt><dd>Откройте выдачу по своему главному запросу в Google и Яндексе: какие страницы в топ-10 — магазины, услуги, статьи, агрегаторы?</dd>
+      <dt>Что делать</dt><dd>Делать страницу того же типа, что и в топе: под «купить» — каталог или карточку с ценой, под «как выбрать» — разбор.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r7">
+    <h2><b>7</b> Сайт неудобен с телефона</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Большая часть трафика мобильная, а с телефона сайт медленный, «прыгает» или кнопки не нажимаются.</dd>
+      <dt>Где смотреть</dt><dd>Search Console → <code>Основные интернет-показатели</code>; Вебмастер → <code>Диагностика</code>. И просто откройте свои главные страницы с телефона по мобильному интернету.</dd>
+      <dt>Что делать</dt><dd>Начать с самых посещаемых шаблонов (категория, карточка, услуга): тяжёлые картинки, лишние скрипты, всплывающие окна поверх контента.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r8">
+    <h2><b>8</b> Нет доверия: цены, контакты, отзывы</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Сайт выглядит как визитка: нет цен, условий доставки и оплаты, реального адреса, отзывов. Для Яндекса это особенно важно у магазинов и услуг.</dd>
+      <dt>Где смотреть</dt><dd>Сравните свою страницу услуги или категории с тремя сайтами из топ-5: что есть у них и нет у вас.</dd>
+      <dt>Что делать</dt><dd>Добавить цены (хотя бы «от»), условия, контакты, реквизиты и отзывы прямо на коммерческие страницы, а не только на «О компании».</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r9">
+    <h2><b>9</b> Не указан регион</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Вы работаете в одном городе, а в Яндексе сайт показывается слабо именно там.</dd>
+      <dt>Где смотреть</dt><dd>Вебмастер → <code>Представление в поиске</code> → <code>Региональность</code>; есть ли карточка организации в Яндекс Бизнесе и Google Business Profile.</dd>
+      <dt>Что делать</dt><dd>Указать регион, завести и заполнить карточки организации, для нескольких городов — отдельные страницы под каждый город.</dd>
+    </dl>
+  </div>
+
+  <div class="item" id="r10">
+    <h2><b>10</b> Санкции и ручные меры</h2>
+    <dl class="row">
+      <dt>Признак</dt><dd>Трафик резко упал за несколько дней без изменений на сайте.</dd>
+      <dt>Где смотреть</dt><dd>Search Console → <code>Проблемы безопасности и меры, принятые вручную</code>. Вебмастер → <code>Диагностика</code> → <code>Безопасность и нарушения</code>.</dd>
+      <dt>Что делать</dt><dd>Если мера есть — убрать причину (покупные ссылки, переспам, нарушения) и отправить запрос на перепроверку. Если нет — сравнить даты падения с апдейтами поисковиков и смотреть, какие страницы просели.</dd>
+    </dl>
+  </div>
+
+  <div class="next">
+    <h2>Нашёл у себя 2–3 пункта?</h2>
+    <p>Это нормально — обычно именно там и лежит рост. Если хочешь понять, какой из пунктов главный для твоего сайта и что исправлять первым, — напиши мне, пришли адрес сайта.</p>
+    <a class="btn js-tg" href="https://www.threads.com/@pavel_lisneuski" target="_blank" rel="noopener">Написать Павлу →</a>
+  </div>
+
+  <footer>© 2026 Павел Лисневский · SEO-консультант · <a href="https://www.threads.com/@pavel_lisneuski" target="_blank" rel="noopener">Threads</a></footer>
+</div>
+<script>
+  // ник в Telegram — подставить, когда Павел пришлёт (без @). Пока пусто — кнопка ведёт в профиль Threads
+  var TG = '';
+  if (TG) {
+    document.querySelectorAll('.js-tg').forEach(function (a) { a.href = 'https://t.me/' + TG; a.textContent = 'Написать в Telegram →'; });
+  }
+</script>
+</body>
+</html>

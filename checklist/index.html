@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5 reasons your website gets no traffic from Google — a free checklist | Pavel Lisnevsky</title>
+<meta name="description" content="A free 5-point checklist: the most common reasons a website gets no traffic from Google, where to see each one in Search Console, and what to fix first.">
+<link rel="canonical" href="https://pvlisnjob-rgb.github.io/seo-diagnostic/checklist/">
+<meta property="og:title" content="5 reasons your website gets no traffic from Google">
+<meta property="og:description" content="Where to see each one in Search Console in a few minutes — and what to fix first.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink: #0f172a; --text: #334155; --muted: #64748b; --line: #e2e8f0; --soft: #f8fafc; --accent: #4f46e5; --accent-dark: #4338ca; --accent-soft: #eef2ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fff; font-size: 17px; line-height: 1.65; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { color: var(--ink); line-height: 1.25; margin: 0; }
+  a { color: var(--accent); }
+  .top { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; font-size: 0.95rem; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 700; text-decoration: none; }
+  .brand span { width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 800; }
+  .top a.th { color: var(--muted); text-decoration: none; }
+  .hero { padding: 40px 0 28px; }
+  .eyebrow { display: inline-block; background: var(--accent-soft); color: var(--accent-dark); font-weight: 600; font-size: 0.85rem; padding: 6px 12px; border-radius: 999px; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; }
+  .hero p { font-size: 1.12rem; margin: 16px 0 0; }
+  .item { border: 1px solid var(--line); border-radius: 18px; padding: 24px; margin: 18px 0; }
+  .item h2 { font-size: 1.25rem; display: flex; gap: 12px; align-items: baseline; }
+  .item h2 b { flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: #fff; display: inline-grid; place-items: center; font-size: 1rem; }
+  .row { display: grid; grid-template-columns: 130px 1fr; gap: 6px 14px; margin-top: 14px; }
+  .row dt { font-weight: 700; color: var(--ink); font-size: 0.9rem; text-transform: uppercase; letter-spacing: .04em; padding-top: 2px; }
+  .row dd { margin: 0; }
+  code { background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 0.88em; }
+  .next { background: var(--ink); color: #cbd5e1; border-radius: 22px; padding: 34px 28px; margin: 36px 0 56px; }
+  .next h2 { color: #fff; margin-bottom: 10px; }
+  .btn { display: inline-flex; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; padding: 14px 24px; border-radius: 12px; margin-top: 14px; }
+  .btn:hover { background: var(--accent-dark); }
+  footer { color: var(--muted); font-size: 0.85rem; padding: 0 0 40px; text-align: center; }
+  @media (max-width: 640px) { .row { grid-template-columns: 1fr; } .item { padding: 18px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../"><span>P</span> Pavel Lisnevsky · SEO consultant</a>
+    <a class="th" href="https://www.threads.com/@pavel.seo.consulting" target="_blank" rel="noopener">@pavel.seo.consulting</a>
+  </header>
+
+  <div class="hero">
+    <span class="eyebrow">Free checklist</span>
+    <h1>5 reasons your website gets no traffic from Google</h1>
+    <p>These are the problems I find most often when a site “does everything right” and still doesn't grow. Each one takes a few minutes to check in Google Search Console — no tools to buy.</p>
+  </div>
+
+  <div class="item">
+    <h2><b>1</b> Google doesn't index your important pages</h2>
+    <dl class="row">
+      <dt>Sign</dt><dd>Service, product or category pages aren't in Google at all — so they can't rank for anything.</dd>
+      <dt>Where to look</dt><dd>Search Console → <code>Pages</code>. Open “Crawled – currently not indexed” and “Discovered – currently not indexed”. If your key pages are there, this is problem #1.</dd>
+      <dt>What it means</dt><dd>Google saw the page and decided it isn't worth showing: too similar to others, too thin, or too weakly linked inside the site. “Request indexing” won't change that decision.</dd>
+      <dt>Fix first</dt><dd>Make each key page clearly different and useful, link to it from your main menu or category pages, and remove near-duplicate pages (tags, filters, test pages).</dd>
+    </dl>
+  </div>
+
+  <div class="item">
+    <h2><b>2</b> There's no page for what people actually search</h2>
+    <dl class="row">
+      <dt>Sign</dt><dd>Your homepage shows up for everything, and nothing ranks well.</dd>
+      <dt>Where to look</dt><dd>Search Console → <code>Performance</code> → <code>Queries</code>, then click a query and switch to <code>Pages</code>. If the homepage answers queries about specific services, products or cities, you're missing landing pages.</dd>
+      <dt>Fix first</dt><dd>One page per service, category or location people search for — with its own title, content and internal links. Structure first, design second.</dd>
+    </dl>
+  </div>
+
+  <div class="item">
+    <h2><b>3</b> Something technical blocks Google</h2>
+    <dl class="row">
+      <dt>Sign</dt><dd>Traffic dropped right after a redesign, a migration or a new website launch.</dd>
+      <dt>Where to look</dt><dd>Search Console → <code>URL Inspection</code> for a key page: is it “Indexing allowed”? Which canonical did Google choose? Then check that <code>robots.txt</code> doesn't block important sections and no <code>noindex</code> was left over from development.</dd>
+      <dt>Fix first</dt><dd>Remove the block, make canonicals point to the page itself, and make sure the main content is visible in the HTML Google renders.</dd>
+    </dl>
+  </div>
+
+  <div class="item">
+    <h2><b>4</b> Your pages are stuck on page 2</h2>
+    <dl class="row">
+      <dt>Sign</dt><dd>Plenty of impressions, almost no clicks.</dd>
+      <dt>Where to look</dt><dd>Search Console → <code>Performance</code> → <code>Pages</code>, turn on “Average position” and filter positions between 8 and 20. These pages are relevant in Google's eyes — just not the best yet.</dd>
+      <dt>Fix first</dt><dd>Before rewriting anything: link to these pages from stronger pages of your site, and make the title answer the search intent. It's the cheapest growth you have.</dd>
+    </dl>
+  </div>
+
+  <div class="item">
+    <h2><b>5</b> The wrong version shows up in the wrong country</h2>
+    <dl class="row">
+      <dt>Sign</dt><dd>You sell in several countries or languages, and some versions get no traffic at all.</dd>
+      <dt>Where to look</dt><dd>Search Console → <code>Performance</code> → <code>Countries</code>, then filter by page. If people in Germany land on your English pages (or no version ranks in a market), the international setup is broken.</dd>
+      <dt>Fix first</dt><dd>Check that every language version has correct <code>hreflang</code> links back and forth, its own canonical, and content written for that market — not just translated.</dd>
+    </dl>
+  </div>
+
+  <div class="next">
+    <h2>Found two or more on your site?</h2>
+    <p>That's normal — and it's usually where the growth is. If you want to know which one matters most for your site and what to fix first, I do this as a written diagnostic: a report your developer can act on, no calls needed.</p>
+    <a class="btn" href="../">SEO Growth Diagnostic — $300 →</a>
+  </div>
+
+  <footer>© 2026 Pavel Lisnevsky · SEO consultant · <a href="https://www.threads.com/@pavel.seo.consulting" target="_blank" rel="noopener">Threads</a></footer>
+</div>
+</body>
+</html>
