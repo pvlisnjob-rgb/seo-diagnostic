@@ -128,7 +128,7 @@
 <div class="wrap">
   <header class="top">
     <a class="brand" href="#"><span class="av">P</span> Pavel Lisnevsky · SEO consultant</a>
-    <a class="th" href="https://www.threads.com/@pavel.seo.consulting" target="_blank" rel="noopener">@pavel.seo.consulting</a>
+    <a class="th" data-count="to-threads" href="https://www.threads.com/@pavel.seo.consulting" target="_blank" rel="noopener">@pavel.seo.consulting</a>
   </header>
 
   <div class="hero">
@@ -137,10 +137,10 @@
     <p class="lead">A written SEO diagnostic that finds what is holding your site back — and tells you what to fix first.</p>
     <p class="for">For e-commerce, B2B and multilingual websites in Europe, the UK and the US.</p>
     <div class="cta-row">
-      <a class="btn js-mail" href="#contact">Request a diagnostic →</a>
+      <a class="btn js-mail" data-count="order" href="#contact">Request a diagnostic →</a>
       <div class="facts"><span>Fixed price: $300</span><span>From 3 business days</span><span>No calls required</span></div>
     </div>
-    <p class="for" style="margin:22px 0 0">Not ready yet? Start with the free checklist: <a href="checklist/">5 reasons your website gets no traffic from Google →</a></p>
+    <p class="for" style="margin:22px 0 0">Not ready yet? Start with the free checklist: <a data-count="to-checklist" href="checklist/">5 reasons your website gets no traffic from Google →</a></p>
   </div>
 
   <section id="results">
@@ -257,8 +257,8 @@
   <div class="final" id="contact">
     <h2>Find out what's holding your site back</h2>
     <p>Send me your website, the markets you sell in and your main goal. I'll reply within one business day.</p>
-    <a class="btn js-mail" href="#contact">Request a diagnostic — $300</a>
-    <span class="mail">or write to <a class="js-mail js-mail-text" href="#contact">pvlisnjob [at] gmail.com</a></span>
+    <a class="btn js-mail" data-count="order" href="#contact">Request a diagnostic — $300</a>
+    <span class="mail">or write to <a class="js-mail js-mail-text" data-count="order" href="#contact">pvlisnjob [at] gmail.com</a></span>
   </div>
 
   <footer>© 2026 Pavel Lisnevsky · SEO consultant · <a href="https://www.threads.com/@pavel.seo.consulting" target="_blank" rel="noopener">Threads</a></footer>
@@ -275,5 +275,6 @@
     document.querySelectorAll('.js-mail-text').forEach(function (a) { a.textContent = addr; });
   })();
 </script>
+<script src="count.js" data-page="en-diag"></script>
 </body>
 </html>

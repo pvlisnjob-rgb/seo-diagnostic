@@ -162,7 +162,7 @@
   <div class="next">
     <h2>Нашёл у себя 2–3 пункта?</h2>
     <p>Это нормально — обычно именно там и лежит рост. Если хочешь понять, какой из пунктов главный для твоего сайта и что исправлять первым, — напиши мне, пришли адрес сайта.</p>
-    <a class="btn js-tg" href="https://www.threads.com/@pavel_lisneuski" target="_blank" rel="noopener">Написать Павлу →</a>
+    <a class="btn js-tg" data-count="contact" href="https://www.threads.com/@pavel_lisneuski" target="_blank" rel="noopener">Написать Павлу →</a>
   </div>
 
   <footer>© 2026 Павел Лисневский · SEO-консультант · <a href="https://www.threads.com/@pavel_lisneuski" target="_blank" rel="noopener">Threads</a></footer>
@@ -174,5 +174,6 @@
     document.querySelectorAll('.js-tg').forEach(function (a) { a.href = 'https://t.me/' + TG; a.textContent = 'Написать в Telegram →'; });
   }
 </script>
+<script src="../count.js" data-page="ru-checklist"></script>
 </body>
 </html>
